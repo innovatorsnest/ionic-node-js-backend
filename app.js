@@ -14,7 +14,8 @@ var app = express();
 
 
 app.use(cors({
-  origin: 'http://localhost:8100'
+  origin: ['http://localhost:8100','https://ionic-nodejs-backend.herokuapp.com','http://localhost:8101'],
+  optionsSuccessStatus: 200
 }));
 
 // view engine setup
